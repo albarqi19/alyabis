@@ -377,6 +377,7 @@ a.col:hover .col__sub { color: rgba(246, 242, 233, .7); }
 .js:not(.rm):not(.static) [data-words] { visibility: hidden; }
 .js:not(.rm):not(.static) [data-stagger] > * { opacity: 0; transform: translateY(18px); }
 .js:not(.rm):not(.static) .hero__static, .js:not(.rm):not(.static) .p-home .hdr .brand svg { visibility: hidden; }
+.js:not(.rm):not(.static) .yu { opacity: 0; }        /* تظهر بعد الاسم (main.js)، لا قبل تحميل السكربت */
 .js:not(.rm):not(.static):not(.intro-seen) .p-home .hdr { opacity: 0; }
 .js:not(.rm):not(.static) .col__ico use, .js:not(.rm):not(.static) .srow__ico use { stroke-dasharray: 1; stroke-dashoffset: 1; }
 @media (prefers-reduced-motion: reduce) { .hero__scroll i { animation: none; } .curtain { display: none; } }

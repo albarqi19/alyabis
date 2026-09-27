@@ -17,7 +17,7 @@ from urllib.parse import quote
 
 SRC = Path(__file__).resolve().parent
 OUT = SRC.parent
-V = "1"
+V = "2"
 PREVIEW = True
 DOMAIN = "https://alyabislaw.com"
 PREVIEW_ORIGIN = "https://alyabis.sites.alraedlaw.com"

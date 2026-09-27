@@ -365,6 +365,7 @@
       var skip = function () { tl.timeScale(5); evs.forEach(function (ev) { window.removeEventListener(ev, skip); }); };
       evs.forEach(function (ev) { window.addEventListener(ev, skip, { passive: true }); });
     } else {
+      gsap.set(underParts, { opacity: 1 });
       tl.fromTo([svgP, svgN, under].filter(Boolean), { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.9, stagger: 0.08 }, 0.05)
         .to(rises, { opacity: 1, y: 0, duration: 0.9, stagger: 0.08 }, 0.25)
         .set(hdr, { opacity: 1 }, 0);
