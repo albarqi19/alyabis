@@ -1,0 +1,6 @@
+*.npy
+*_ids.png
+name_skel.png
+strokes_check.png
+m_*.png
+comps.json

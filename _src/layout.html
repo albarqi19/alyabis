@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{TITLE}}</title>
+  <meta name="description" content="{{DESC}}">
+  {{ROBOTS}}
+  <link rel="canonical" href="{{CANON}}">
+  <link rel="preload" href="/assets/fonts/ibm-plex-arabic-400-arabic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/ibm-plex-arabic-700-arabic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/style.css?v={{V}}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{DISPLAY}}">
+  <meta property="og:locale" content="ar_SA">
+  <meta property="og:title" content="{{TITLE}}">
+  <meta property="og:description" content="{{DESC}}">
+  <meta property="og:url" content="{{OG_URL}}">
+  <meta property="og:image" content="{{OG_IMAGE}}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#f6f2e9">
+  <meta name="geo.region" content="SA-04">
+  <meta name="geo.placename" content="الخبر">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <script>
+    (function (h) {
+      h.className = h.className.replace('no-js', 'js');
+      try {
+        if (matchMedia('(prefers-reduced-motion: reduce)').matches) h.classList.add('rm');
+        if (sessionStorage.getItem('ya-nav')) { h.classList.add('is-arriving'); sessionStorage.removeItem('ya-nav'); }
+        if (sessionStorage.getItem('ya-intro')) h.classList.add('intro-seen');
+      } catch (e) {}
+      setTimeout(function () { if (!h.classList.contains('ready')) h.classList.add('static'); }, 3500);
+    })(document.documentElement);
+  </script>
+  <script type="application/ld+json">{{JSONLD}}</script>
+</head>
+<body class="p-{{PAGE}}">
+  <a class="skip" href="#main">تخط إلى المحتوى</a>
+
+  <div class="curtain" aria-hidden="true">
+    <span class="curtain__line"></span>
+    <svg class="curtain__pillar" viewBox="{{PILLAR_VB}}"><use href="{{SPRITE}}#pillar"/></svg>
+  </div>
+
+  <header class="hdr">
+    <div class="wrap hdr__in">
+      <a class="brand" href="/" aria-label="{{DISPLAY}}، الرئيسية">
+        <svg class="brand__pillar" viewBox="{{PILLAR_VB}}" aria-hidden="true" focusable="false"><use href="{{SPRITE}}#pillar"/></svg>
+        <svg class="brand__name" viewBox="{{NAME_VB}}" aria-hidden="true" focusable="false"><use href="{{SPRITE}}#name"/></svg>
+      </a>
+      <nav class="nav" aria-label="القائمة الرئيسية"><ul>{{NAV}}</ul></nav>
+      <a class="hdr__portal" href="{{PORTAL}}">{{ICO_DOOR}}<span>بوابة العملاء</span></a>
+      <a class="btn btn--ink btn--sm hdr__cta" href="{{WA}}" target="_blank" rel="noopener">{{ICO_WA}}<span>استشارة</span></a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="فتح القائمة"><span></span><span></span></button>
+    </div>
+    <span class="hdr__progress" aria-hidden="true"></span>
+  </header>
+
+  <div class="menu" id="menu" inert>
+    <ul class="menu__links">{{MENU}}</ul>
+    <div class="menu__foot">
+      <a class="btn btn--gold" href="{{WA}}" target="_blank" rel="noopener">{{ICO_WA}}<span>ابدأ المحادثة الآن</span></a>
+      <a class="menu__line" href="tel:{{MOBILE_INTL}}" dir="ltr">{{MOBILE}}</a>
+      <a class="menu__line" href="{{PORTAL}}">بوابة العملاء</a>
+    </div>
+  </div>
+
+  <main id="main">
+{{MAIN}}
+  </main>
+
+  <footer class="ftr">
+    <div class="wrap">
+      <div class="ftr__top">
+        <div class="ftr__logo" aria-hidden="true">{{LOCKUP_FTR}}</div>
+        <p class="ftr__slogan">محامون · مستشارون · محكمون</p>
+      </div>
+      <div class="ftr__grid">
+        <div class="ftr__col">
+          <p class="ftr__h">الموقع</p>
+          <ul><li><a href="/">الرئيسية</a></li><li><a href="/about-us/">من نحن</a></li><li><a href="/services/">الخدمات</a></li><li><a href="/#clients">عملاؤنا</a></li><li><a href="/contact/">تواصل معنا</a></li></ul>
+        </div>
+        <div class="ftr__col">
+          <p class="ftr__h">تواصل</p>
+          <ul>
+            <li><a href="{{WA}}" target="_blank" rel="noopener">واتساب: <span dir="ltr">{{MOBILE}}</span></a></li>
+            <li><a href="tel:{{PHONE_INTL}}">الهاتف: <span dir="ltr">{{PHONE}}</span></a></li>
+            <li><a href="mailto:{{EMAIL}}" dir="ltr">{{EMAIL}}</a></li>
+            <li>{{ADDRESS}}</li>
+          </ul>
+        </div>
+        <div class="ftr__col">
+          <p class="ftr__h">لعملاء المكتب</p>
+          <ul><li><a href="{{PORTAL}}">بوابة العملاء</a></li><li>ترخيص رقم {{LICENSE}}</li></ul>
+        </div>
+      </div>
+      <div class="ftr__bottom">
+        <p>جميع الحقوق محفوظة ل{{NAME}} © <span data-year>2026</span></p>
+        <a class="totop" href="#top">العودة للأعلى {{ICO_UP}}</a>
+      </div>
+    </div>
+  </footer>
+
+{{FLY}}
+  <script src="/assets/js/vendor/gsap.min.js?v={{V}}" defer></script>
+  <script src="/assets/js/vendor/ScrollTrigger.min.js?v={{V}}" defer></script>
+  <script src="/assets/js/vendor/lenis.min.js?v={{V}}" defer></script>
+  <script src="/assets/js/main.js?v={{V}}" defer></script>
+</body>
+</html>

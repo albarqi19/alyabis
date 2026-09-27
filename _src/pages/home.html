@@ -1,0 +1,108 @@
+    <!-- ================= البطل: يبنى العمود ويكتب الاسم ================= -->
+    <section class="hero" id="top">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="wrap hero__in">
+        <div class="hero__logo" style="--logo-ar:{{LOGO_AR}}">
+          <svg class="hero__static" viewBox="{{LOGO_VB}}" focusable="false" aria-hidden="true"><use href="{{SPRITE}}#logo"/></svg>
+          <span class="hero__slot hero__slot--pillar" style="{{SLOT_PILLAR}}"></span>
+          <span class="hero__slot hero__slot--name" style="{{SLOT_NAME}}"></span>
+          {{HERO_UNDER}}
+        </div>
+        <div class="hero__text">
+          <p class="hero__eyebrow" data-rise>الخبر · المنطقة الشرقية</p>
+          <h1 class="hero__t" data-rise><span class="sr-only">{{DISPLAY}}: </span>{{STATEMENT}}</h1>
+          <p class="hero__sub" data-rise>{{SUB}}</p>
+          <div class="hero__actions" data-rise>
+            <a class="btn btn--ink" href="{{WA}}" target="_blank" rel="noopener">{{ICO_WA}}<span>احجز استشارتك الآن</span></a>
+            <a class="btn btn--line" href="/services/"><span>خدماتنا</span>{{ICO_ARROW}}</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true"><i></i></div>
+    </section>
+
+    <!-- ================= من نحن ================= -->
+    <section class="about sec" id="about">
+      <div class="wrap about__grid">
+        <div class="about__text">
+          <p class="eyebrow" data-rise>من نحن</p>
+          <h2 class="h2" data-words>{{ABOUT_TITLE}}</h2>
+          <p class="about__lead" data-rise>{{ABOUT1}}</p>
+          <p class="about__p" data-rise>{{ABOUT2}}</p>
+          <a class="link-arrow" href="/about-us/" data-rise><span>المزيد عنا</span>{{ICO_ARROW}}</a>
+        </div>
+        <figure class="frame" data-frame>
+          <span class="frame__cap" aria-hidden="true"><i></i><i></i></span>
+          <span class="frame__img"><img src="/assets/img/office-900.webp" alt="مكتب الشركة في برج السلام بالخبر" width="900" height="506" loading="lazy"></span>
+          <span class="frame__base" aria-hidden="true"><i></i><i></i></span>
+          <figcaption>مقر الشركة، برج السلام، الخبر</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= الشريك الموثوق ================= -->
+    <section class="partner">
+      <div class="wrap">
+        <p class="partner__t" data-lines>{{PARTNER}}</p>
+      </div>
+    </section>
+
+    <!-- ================= قائد الفريق ================= -->
+    <section class="leader sec">
+      <div class="wrap leader__grid">
+        <div class="leader__text">
+          <p class="eyebrow eyebrow--gold" data-rise>{{LEADER_ROLE}}</p>
+          <h2 class="h2 leader__name" data-words>{{LEADER_NAME}}</h2>
+          <p class="leader__bio" data-rise>{{LEADER_BIO}}</p>
+        </div>
+        <ul class="stones" data-stones aria-label="الصفات المهنية">{{CREDENTIALS}}</ul>
+      </div>
+    </section>
+
+    <!-- ================= الخدمات: أعمدة ================= -->
+    <section class="svcs sec" id="services">
+      <div class="wrap">
+        <header class="shead">
+          <p class="eyebrow" data-rise>الخدمات</p>
+          <h2 class="h2" data-words>{{SERVICES_TITLE}}</h2>
+          <p class="lead" data-rise>{{SERVICES_INTRO}}</p>
+        </header>
+        <div class="colonnade" data-colonnade>
+          {{COLONNADE}}
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= الإفلاس ================= -->
+    <section class="bk">
+      <div class="wrap bk__in">
+        <p class="eyebrow eyebrow--gold" data-rise>تخصص</p>
+        <h2 class="bk__t" data-words>{{BK_TITLE}}</h2>
+        <p class="bk__p" data-rise>{{BK_TEXT}}</p>
+        <a class="btn btn--gold" href="/services/#bankruptcy" data-rise><span>خدمات الإفلاس</span>{{ICO_ARROW}}</a>
+      </div>
+    </section>
+
+    <!-- ================= العملاء ================= -->
+    <section class="clients sec" id="clients">
+      <div class="wrap">
+        <header class="shead shead--center">
+          <p class="eyebrow" data-rise>عملاؤنا</p>
+          <h2 class="h2" data-words>{{CLIENTS_TITLE}}</h2>
+        </header>
+        <ul class="clients__grid" data-stagger>{{CLIENTS}}</ul>
+      </div>
+    </section>
+
+    <!-- ================= احجز استشارتك ================= -->
+    <section class="consult sec" id="contact">
+      <div class="wrap consult__grid">
+        <div class="consult__info">
+          <p class="eyebrow eyebrow--gold" data-rise>تواصل معنا</p>
+          <h2 class="h2" data-words>{{CONSULT_TITLE}}</h2>
+          <p class="lead" data-rise>{{CONSULT_LINE}}</p>
+          {{CONTACT}}
+        </div>
+        {{COMPOSER}}
+      </div>
+    </section>
